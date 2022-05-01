@@ -13,7 +13,6 @@ export const Modal = ({textModal}) => {
             }}>
 
                 <div>{textModal}</div>
-                <div style={{color: 'rgba(57,0,225,0.76)'}}>123</div>
             </div>
 
         </div>
