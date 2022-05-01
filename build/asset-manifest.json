@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/quest/build/static/css/main.0b4e74b4.css",
-    "main.js": "/quest/build/static/js/main.1480dfee.js",
+    "main.css": "/quest/build/static/css/main.c824d18e.css",
+    "main.js": "/quest/build/static/js/main.3707ca00.js",
     "static/js/787.2e6e6aaf.chunk.js": "/quest/build/static/js/787.2e6e6aaf.chunk.js",
     "static/media/Brest.jpg": "/quest/build/static/media/Brest.1264826efed7a3469050.jpg",
     "static/media/aqua.jpg": "/quest/build/static/media/aqua.47623b28ec7f004e9004.jpg",
+    "static/media/presents.png": "/quest/build/static/media/presents.58c9825d0ce6fc322733.png",
     "static/media/govorun.jpg": "/quest/build/static/media/govorun.f424187900fa0741909c.jpg",
     "static/media/maps.jpg": "/quest/build/static/media/maps.e320b5d80a587fd584cb.jpg",
     "index.html": "/quest/build/index.html",
-    "main.0b4e74b4.css.map": "/quest/build/static/css/main.0b4e74b4.css.map",
-    "main.1480dfee.js.map": "/quest/build/static/js/main.1480dfee.js.map",
+    "main.c824d18e.css.map": "/quest/build/static/css/main.c824d18e.css.map",
+    "main.3707ca00.js.map": "/quest/build/static/js/main.3707ca00.js.map",
     "787.2e6e6aaf.chunk.js.map": "/quest/build/static/js/787.2e6e6aaf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b4e74b4.css",
-    "static/js/main.1480dfee.js"
+    "static/css/main.c824d18e.css",
+    "static/js/main.3707ca00.js"
   ]
 }
