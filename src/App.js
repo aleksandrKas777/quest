@@ -7,6 +7,7 @@ import brest from "./images/Brest.jpg"
 import art from './images/aqua.jpg'
 import maps from './images/maps.jpg'
 import tort from './images/tort.png'
+import build from './images/build.jpg'
 
 const arrText = {
     0: {
@@ -60,7 +61,7 @@ const arrText = {
 function App() {
     const [stage, setStage] = useState(Number(localStorage.getItem('questJulia')) || 0)
     const [valueInput, setValueInput] = useState('')
-    const arrCorrectAnswers = ['170b', 'all', 'говорун', 'all', '334', '96.8', 'лев', '397-50-10', 'a1161b-2', 'art&shock', 'all']
+    const arrCorrectAnswers = ['170b', 'all', 'говорун', 'all', '334', '96.8', 'лев', '397-50-10', 'a 1161b-2', 'art&shock', 'all']
     const [count, setCount] = useState(0)
     const [showModal, setShowModal] = useState(false)
     const [textError, setTextError] = useState('')
@@ -144,6 +145,8 @@ function App() {
                 {stage === 3 && <img src={brest} style={{width: '100%'}}
                                      alt={'если фото не загрузилось, попроси организаторов сбросить тебе фото в телегу))'}/>
                 }
+                {stage === 10 && <img src={build} style={{width: '100%'}}
+                                     alt={'если фото не загрузилось, попроси организаторов сбросить тебе фото в телегу))'}/>}
                 {stage === 9 &&
                     <div>
                         <img className={'mb-2'} src={art} style={{width: '100%'}}
@@ -164,7 +167,7 @@ function App() {
                 </div>
             </main>}
             {stage === 100 &&
-                <button className={'btn btn-primary'} onClick={() => setStage(0)}>Началь заново</button>
+                <button className={'btn btn-primary'} onClick={() => setStage(0)}>Начать заново</button>
             }
         </div>
     );
