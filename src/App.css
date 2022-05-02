@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
 
 body{
-  height: 100vh;
+  min-height: 100vh;
   background: url("./images/presents.png") no-repeat bottom;
   background-size: 95% auto;
 }
@@ -21,6 +21,8 @@ header{
 }
 .count{
   font-family: 'Pangolin', cursive;
+  background: rgba(255, 255, 255, 0.52);
+
 }
 .task{
   font-family: 'Gabriela', serif;

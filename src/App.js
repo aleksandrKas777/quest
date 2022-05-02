@@ -30,7 +30,7 @@ const arrText = {
         modalText: 'СУПЕР!!!'
     },
     5: {
-        task: "Садись на 116 автобус и отправляйся на Кунцевщину) Там есть необычный термометр, судя по надписи возле него, он не должен измерять температуру в цельсиях... Запиши в ответ значение при котором этот термометр перестанем показывать правильную температуру",
+        task: "Садись на 116 автобус и отправляйся на Кунцевщину) Там есть странный термометр, написано одно, а показывает другое... Запиши в ответ максимальное значение на термометре соответствующее надписи",
         modalText: 'Огонь!!!'
     },
     6: {
@@ -42,11 +42,11 @@ const arrText = {
         modalText: "На мозгобойне с тобой всех порвем в следующий раз"
     },
     8: {
-        task: "Теперь двигаясь к м.Спортивная нужно как-то найти передвижную бургерную и в ответ записать ее регистрационный знак",
+        task: "Теперь двигаясь к м.Спортивная нужно найти передвижную перекусочную и в ответ записать ее регистрационный знак",
         modalText: "Молодец!!!"
     },
     9: {
-        task: "найди место на фото) примерно где-то здесь на карте)напиши в ответ название автора этого рисунка",
+        task: "найди место на фото) примерно где-то здесь на карте)напиши в ответ автора этого рисунка",
         modalText: "ты почти у цели!!!!"
 
     },
@@ -60,7 +60,7 @@ const arrText = {
 function App() {
     const [stage, setStage] = useState(Number(localStorage.getItem('questJulia')) || 0)
     const [valueInput, setValueInput] = useState('')
-    const arrCorrectAnswers = ['170b', 'all', 'говорун', 'all', '334', '37', 'лев', '397-50-10', 'a1161b-2', 'art&shock', 'all']
+    const arrCorrectAnswers = ['170b', 'all', 'говорун', 'all', '334', '96.8', 'лев', '397-50-10', 'a1161b-2', 'art&shock', 'all']
     const [count, setCount] = useState(0)
     const [showModal, setShowModal] = useState(false)
     const [textError, setTextError] = useState('')
@@ -127,7 +127,7 @@ function App() {
             {showModal &&
                 <Modal setShowModal={setShowModal} textModal={textError ? textError : arrText[stage].modalText}/>
             }
-            <header className={'mb-3'} style={{backgroundColor: '#7952b3', height: '40px', color: '#FFF'}}>
+            <header className={'mb-2'} style={{backgroundColor: '#7952b3', height: '40px', color: '#FFF'}}>
                 <img src={tort} alt={'tort'} style={{height: '92%'}}/>
                 <div>Happy Birthday</div>
             </header>
@@ -151,7 +151,6 @@ function App() {
                         <img src={maps} style={{width: '100%'}}
                              alt={'если фото не загрузилось, попроси организаторов сбросить тебе фото в телегу'}/>
                     </div>}
-
 
                 <div className={'count'}>
                     <span>{'счетчик неправильных ответов: '}</span><span className={'text-decoration-underline'}

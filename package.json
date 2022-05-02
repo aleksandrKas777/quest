@@ -24,7 +24,6 @@
       "react-app/jest"
     ]
   },
-  "homepage": "/quest/build",
   "browserslist": {
     "production": [
       ">0.2%",
